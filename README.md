@@ -35,7 +35,7 @@ option-pricing-mc/
 - **Estimators**:
     - Naive Monte Carlo (baseline)
     - Antithetic variates (pair Z and −Z)
-    - Control variate (discounted terminal stock e^{-rT} S_T with known expectation = S0)
+    - Control variate (the terminal stock price discounted at the risk-free rate, with known expectation).
 
 Important numerical parameters used for the reported experiments:
     - num_simulations = 10,000 for method comparison
@@ -92,4 +92,5 @@ I would say these are opportunities for Level-2 upgrades (calibration to histori
 - All key outputs are saved as CSV files in code/results/, and generated plots are stored in code/plots/. A requirements.txt file is included in the repository to ensure reproducibility with exact package versions.
 
 ## Author
+
 This project was completed as an implemented to build numerical intuition for quantitative finance and to prepare for supervised research opportunities.
